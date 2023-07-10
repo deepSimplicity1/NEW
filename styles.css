@@ -1,0 +1,48 @@
+@import 'tailwind.css';
+
+/* CSS Variables */
+:root {
+    --main-color: #f3f4f6;
+    --secondary-color: #1f2937;
+    --font-color: #4b5563;
+}
+
+/* Styling for the body */
+body {
+    background-color: var(--main-color);
+    color: var(--font-color);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the header */
+#header {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for the main content */
+#main-content {
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Styling for the footer */
+#footer {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    #header, #footer {
+        padding: 15px;
+    }
+}

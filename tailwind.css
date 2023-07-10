@@ -1,0 +1,33 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles */
+.container {
+  @apply mx-auto max-w-md px-4;
+}
+
+.header {
+  @apply text-2xl font-bold text-center py-4;
+}
+
+.main-content {
+  @apply text-base text-gray-700;
+}
+
+.footer {
+  @apply text-sm text-center py-4;
+}
+
+/* Responsive styles */
+@media (min-width: 640px) {
+  .container {
+    @apply max-w-lg;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    @apply max-w-xl;
+  }
+}
